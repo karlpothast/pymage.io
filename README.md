@@ -1,6 +1,8 @@
 # pymage.io
 #### Simple and easy OCR app - useful for study guides. Built with dotnet 7, Angular SPA, and Clean Architecture API backend
 
+![alt text](https://raw.githubusercontent.com/karlpothast/pymage.io/master/documentation/main.png)
+
 ### Example - let's say you are watching this python tutorial.  
 ![alt text](https://raw.githubusercontent.com/karlpothast/pymage.io/master/documentation/youtube.png)
 
