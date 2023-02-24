@@ -1,0 +1,237 @@
+<style>
+  td, table{
+      border: solid black 0px;"
+  }
+  header h1{
+      margin:0px;
+  }
+  header{
+    position: relative;
+    margin: 0 auto 0;
+    padding-top: Opx;
+  }
+  body{
+    position: relative;
+    margin: 0 auto 0;
+    padding-top: Opx;
+  }
+  html {
+    overflow-y: hidden;
+  }
+  table {
+      border-spacing: 0px;
+      border-collapse: separate;
+  }
+  img
+  {
+    border-radius: 10px;
+  }
+  hr { margin: 0.1em auto; }
+ 
+  .maincontainer
+  {
+      width: 175px;
+      height: 150px;
+      margin: 15px;
+      text-align: center;
+      padding: 5px; 
+      font-family:Montserrat,Helvetica Neue,Arial,sans-serif;
+      display: inline-block; 
+
+  }
+  .maincontainer > .front
+  {
+      position: absolute;
+      transform: perspective(400px) rotateY(0deg);
+      font-family:Montserrat,Helvetica Neue,Arial,sans-serif;
+      background: rgb(255,255,255);
+      background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,232,115,1) 55%, rgba(255,212,59,1) 100%);
+      width: 175px;
+      height: 150px;
+      padding: 5px;
+      backface-visibility: hidden; 
+      transition: transform .3s linear 0s;
+      text-align:center;
+      color:#306998;
+      display: table-cell;
+      vertical-align: middle;
+      box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  }
+  .maincontainer:hover > .front
+  {
+      transform: perspective(400px) rotateY(-180deg);
+  }
+  .front h4
+  {
+      padding-top:20px;
+      color:#306998;
+      font-weight:Normal;
+  }
+  .front p
+  {
+    color:#306998
+  }
+  .maincontainer > .back
+  {
+      position: absolute;
+      transform: perspective(400px) rotateY(180deg);
+      background: #262626;
+      color: #fff;
+      width: 175px;
+      height: 150px;
+      border-radius: 10px;
+      backface-visibility: hidden; 
+      transition: transform .3s linear 0s;
+      padding: 3px;
+      text-align:center;
+       display: table;
+  }
+  .maincontainer:hover > .back
+  {
+      transform: perspective(400px) rotateY(0deg);
+  }
+  .back h4
+  {
+      position: absolute;
+  }
+  .back p
+  {
+      position: absolute;
+      top: 15px;
+      font-size: 14px;
+  }
+  a, a:visited, a:hover, a:active {
+    color: inherit;
+    text-decoration: none;
+  }
+  .center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+ .main {
+    display: table;
+    /* optional css start */
+    height: 90px;
+    width: 90px;
+    /* optional css end */
+  }  
+ .inner {
+    border: 1px solid #000000;
+    display: table-cell;
+    vertical-align: middle;
+ }
+ .hr {
+  border-top: 2px solid white;
+}
+ }
+</style> 
+<body>
+    <table width="100%; height:100%">
+        <tr>
+            <td
+                style="background-color:#4b8bbe;font-family:Montserrat,Helvetica Neue,Arial,sans-serif; color:white; vertical-align:top; 
+        -webkit-font-smoothing: antialiased; filter: drop-shadow(6px 4px 28px #000); z-index=10; padding-right: 15px;padding-top: 10px;
+        height: 100%; position: fixed; top: 0;
+        left: 0; overflow-x: hidden; overflow-y:hidden
+        overflow-anchor: none;  font-size:16pt"
+                width="20%">
+                <div style="filter: drop-shadow(0 0 0.75rem yellow); text-align: center;">
+                    <a href="/index.html">
+                        <img src="./assets/pymagelogo.png" width="60px" />
+                        &nbsp;&nbsp;&nbsp;
+                        <a style="font-size: 16pt;"> pymage-to-text </a>
+                    </a>
+                </div>
+                <div style="text-align: center;">
+                    <hr width="90%" />
+                </div>
+                <div style="padding-top: 5px; padding-right: 21px; text-align: right; font-size: 12pt;">
+                    <table width="50%" align="right">
+                        <tr>
+                            <td style="text-align: right;">
+                                <a style="font-size:9pt; font-family:Monospace;Courier;DejaVu Sans Mono;">
+                                    ANGULAR <br />
+                                    + AWS <br />
+                                    + PYTHON
+                                </a>
+                                <br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: right;">
+                                <div class="hr" style="width:100%; padding-right:25px" align="right"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right" style="padding-top: 0px;">
+                                <a style="font-size:9pt; font-family:Monospace;Courier;DejaVu Sans Mono;color: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 232, 115, 1) 50%, rgba(255, 212, 59, 1) 100%);"> = OCR as easy as py </a>
+                                <br>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <table class="center" style="height:580px;padding-top:10px">
+                  <tr height="33%">
+                    <td style="vertical-align:top">
+                      <div class="maincontainer">
+                          <div class="front" style="border: solid black 0px; border-radius: 10px; background-color: white;">
+                              <h4>Screenshot an image with text</h4>
+                          </div>
+                          <div class="back" style="font-size: 12pt; background-color: #646464; font-weight: bold;">
+                              <p>
+                                  Capture a screenshot from an image or video with text you want copied to your clipboard. <br />
+                              </p>
+                          </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr height="33%">
+                  <td style="vertical-align:top">
+                      <div class="maincontainer">
+                          <div *ngIf="appMode==='button'" class="front" style="border: solid black 0px; border-radius: 10px; background-color: white;">
+                              <h4>Click the <strong>pymage-to-text</strong> button</h4>
+                          </div>
+                          <div *ngIf="appMode==='paste'" class="front" style="border: solid black 0px; border-radius: 10px; background-color: white;">
+                              <h4>Paste the image to the form</h4>
+                          </div>
+                          <div class="back" style="font-size: 12pt; background-color: #646464; font-weight: bold;">
+                              <p>
+                                  After clicking the <strong>pymage-to-text</strong> button,
+                                  Pymage will process the image into editable text.
+                              </p>
+                          </div>
+                      </div>                  
+                    </td>
+                  </tr>
+                  <tr height="33%">
+                  <td style="vertical-align:top">
+                      <div class="maincontainer">
+                          <div class="front" style="border: solid black 0px; border-radius: 10px; background-color: white;">
+                              <h4>View your editable text results</h4>
+                          </div>
+                          <div class="back" style="font-size: 12pt; background-color: #646464; font-weight: bold;">
+                              <p>
+                                  When finished the text will appear below, edit your text as needed and press the copy text button.
+                              </p>
+                              <br />
+                          </div>
+                      </div>         
+                    </td>
+                  </tr>
+              </table>            
+            </td>
+            <td width="80%" height="100%" style="vertical-align:top; margin-top:0; padding-top:0; top:0px;" valign="top" >
+                <main class="container">
+                    <router-outlet></router-outlet>
+                </main>
+            </td>
+        </tr>
+        <tr>
+          <td>
+            <span>Copyright © 2023 K2P Development. All Rights Reserved </span>
+          </td>
+        </tr>
+    </table>
+
+
+</body>

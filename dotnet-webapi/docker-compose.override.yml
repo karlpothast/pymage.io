@@ -1,0 +1,18 @@
+version: '3.6'
+
+services:
+  pymage.io:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=https://+:443;http://+:80
+      - ASPNETCORE_Kestrel__Certificates__Default__Password=pabird1
+      - ASPNETCORE_Kestrel__Certificates__Default__Path=/https/pymage_io.pfx
+      - ConnectionStrings__DefaultConnection=Server=localhost;Database=db;User=sa;Password=pw;TrustServerCertificate=True;Encrypt=false
+      - ENABLE_CORS=true
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./https:/https/:ro
+    networks:
+      - localdev

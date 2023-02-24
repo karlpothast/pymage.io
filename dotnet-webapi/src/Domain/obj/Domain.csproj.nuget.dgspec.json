@@ -1,0 +1,85 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/kp/workspaces/dotnet7/dotnet-webapi3/ocr-api/src/Domain/Domain.csproj": {}
+  },
+  "projects": {
+    "/home/kp/workspaces/dotnet7/dotnet-webapi3/ocr-api/src/Domain/Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/kp/workspaces/dotnet7/dotnet-webapi3/ocr-api/src/Domain/Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "/home/kp/workspaces/dotnet7/dotnet-webapi3/ocr-api/src/Domain/Domain.csproj",
+        "packagesPath": "/home/kp/.nuget/packages/",
+        "outputPath": "/home/kp/workspaces/dotnet7/dotnet-webapi3/ocr-api/src/Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/kp/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "MassTransit": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "StronglyTypedId": {
+              "target": "Package",
+              "version": "[1.0.0-beta06, )"
+            },
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.2, 7.0.2]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.102/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

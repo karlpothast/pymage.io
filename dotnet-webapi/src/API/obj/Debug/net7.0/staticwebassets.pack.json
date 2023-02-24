@@ -1,0 +1,77 @@
+{
+  "Files": [
+    {
+      "Id": "/home/kp/workspaces/dotnet7/dotnet-webapi3/ocr-api/src/API/wwwroot/3rdpartylicenses.txt",
+      "PackagePath": "staticwebassets/3rdpartylicenses.txt"
+    },
+    {
+      "Id": "/home/kp/workspaces/dotnet7/dotnet-webapi3/ocr-api/src/API/wwwroot/assets/clipboard.js",
+      "PackagePath": "staticwebassets/assets/clipboard.js"
+    },
+    {
+      "Id": "/home/kp/workspaces/dotnet7/dotnet-webapi3/ocr-api/src/API/wwwroot/assets/copy.png",
+      "PackagePath": "staticwebassets/assets/copy.png"
+    },
+    {
+      "Id": "/home/kp/workspaces/dotnet7/dotnet-webapi3/ocr-api/src/API/wwwroot/assets/favicon.ico",
+      "PackagePath": "staticwebassets/assets/favicon.ico"
+    },
+    {
+      "Id": "/home/kp/workspaces/dotnet7/dotnet-webapi3/ocr-api/src/API/wwwroot/assets/pymage.png",
+      "PackagePath": "staticwebassets/assets/pymage.png"
+    },
+    {
+      "Id": "/home/kp/workspaces/dotnet7/dotnet-webapi3/ocr-api/src/API/wwwroot/assets/pymagelogo.png",
+      "PackagePath": "staticwebassets/assets/pymagelogo.png"
+    },
+    {
+      "Id": "/home/kp/workspaces/dotnet7/dotnet-webapi3/ocr-api/src/API/wwwroot/bootstrap-icons.6fdf98f9eb97d9e7.woff2",
+      "PackagePath": "staticwebassets/bootstrap-icons.6fdf98f9eb97d9e7.woff2"
+    },
+    {
+      "Id": "/home/kp/workspaces/dotnet7/dotnet-webapi3/ocr-api/src/API/wwwroot/bootstrap-icons.dba5e3b77b478961.woff",
+      "PackagePath": "staticwebassets/bootstrap-icons.dba5e3b77b478961.woff"
+    },
+    {
+      "Id": "/home/kp/workspaces/dotnet7/dotnet-webapi3/ocr-api/src/API/wwwroot/index.html",
+      "PackagePath": "staticwebassets/index.html"
+    },
+    {
+      "Id": "/home/kp/workspaces/dotnet7/dotnet-webapi3/ocr-api/src/API/wwwroot/main.1709ef7f47081e05.js",
+      "PackagePath": "staticwebassets/main.1709ef7f47081e05.js"
+    },
+    {
+      "Id": "/home/kp/workspaces/dotnet7/dotnet-webapi3/ocr-api/src/API/wwwroot/polyfills.02e4e7cf1c7145a0.js",
+      "PackagePath": "staticwebassets/polyfills.02e4e7cf1c7145a0.js"
+    },
+    {
+      "Id": "/home/kp/workspaces/dotnet7/dotnet-webapi3/ocr-api/src/API/wwwroot/runtime.5b453199429e9ebd.js",
+      "PackagePath": "staticwebassets/runtime.5b453199429e9ebd.js"
+    },
+    {
+      "Id": "/home/kp/workspaces/dotnet7/dotnet-webapi3/ocr-api/src/API/wwwroot/scripts.7f1247a9937b8d58.js",
+      "PackagePath": "staticwebassets/scripts.7f1247a9937b8d58.js"
+    },
+    {
+      "Id": "/home/kp/workspaces/dotnet7/dotnet-webapi3/ocr-api/src/API/wwwroot/styles.e1e8b0ba1d303f19.css",
+      "PackagePath": "staticwebassets/styles.e1e8b0ba1d303f19.css"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.API.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.build.API.props",
+      "PackagePath": "build\\API.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.API.props",
+      "PackagePath": "buildMultiTargeting\\API.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.API.props",
+      "PackagePath": "buildTransitive\\API.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

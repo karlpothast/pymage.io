@@ -1,0 +1,201 @@
+<header>
+<style>
+  td, table{
+      border: solid black 0px;"
+  }
+
+  .shadow{
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px
+  }
+
+  .paste {
+      padding-top: 6px;
+      padding-bottom: 6px;
+      padding-left: 6px;
+      padding-right: 6px;
+      margin-bottom: 0px;
+      #border-width: 1px;
+      #border-color: #306998;
+      color: #306998;
+      #border-style: solid;
+      #border-radius: 6px;
+      #background-color:#306998; 
+      font-size: 32px;
+      filter: drop-shadow(1px 0px 2px #4B8BBE);
+      font-family:Montserrat, sans-serif;
+
+      #4B8BBE light python blue
+  }
+  .css-input:focus {
+      outline:none;
+  }
+
+  .lds-roller {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 40px 40px;
+}
+.lds-roller div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #fff;
+  margin: -4px 0 0 -4px;
+}
+.lds-roller div:nth-child(1) {
+  animation-delay: -0.036s;
+}
+.lds-roller div:nth-child(1):after {
+  top: 63px;
+  left: 63px;
+}
+.lds-roller div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+.lds-roller div:nth-child(2):after {
+  top: 68px;
+  left: 56px;
+}
+.lds-roller div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+.lds-roller div:nth-child(3):after {
+  top: 71px;
+  left: 48px;
+}
+.lds-roller div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+.lds-roller div:nth-child(4):after {
+  top: 72px;
+  left: 40px;
+}
+.lds-roller div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+.lds-roller div:nth-child(5):after {
+  top: 71px;
+  left: 32px;
+}
+.lds-roller div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+.lds-roller div:nth-child(6):after {
+  top: 68px;
+  left: 24px;
+}
+.lds-roller div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+.lds-roller div:nth-child(7):after {
+  top: 63px;
+  left: 17px;
+}
+.lds-roller div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+.lds-roller div:nth-child(8):after {
+  top: 56px;
+  left: 12px;
+}
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+</style>
+</header>
+  
+<div style="text-align: left;">
+<table width="100%" height="100%" style="padding-left:0px; vertical-align:top; padding-top:0px">
+    <tr>
+        <td rowspan="2" width="20%" style="vertical-align:top; padding-top:0px" align="right">
+          <img src="/assets/pymage.png" width="85%" />
+        </td>
+        <td colspan="2" width=60%>
+            <div style="text-align: center;">
+                <div style="display: inline-block; text-align: left;">
+                    <span style="font-family:Flux Regular;Iwona-Regular;Liberty Sans Regular;Ubuntu;Times New Roman; font-size:36pt">
+                        pymage-to-text | online ocr tool
+                    </span>
+                </div>
+            </div>
+        </td>
+        <td width=20%></td>
+    </tr>
+    <tr>
+        <td style="vertical-align: top;" colspan="2">
+            <div style="text-align: center;">
+                <div style="display: inline-block; text-align: left;">
+                    <span *ngIf="appMode==='button'" style="font-family:Flux Regular;Iwona-Regular;Liberty Sans Regular;Ubuntu;Times New Roman; font-size:24pt">
+                        from screenshot to text with a snip and a click
+                    </span>
+                    <span *ngIf="appMode==='paste'" style="font-family:Flux Regular;Iwona-Regular;Liberty Sans Regular;Ubuntu;Times New Roman; font-size:24pt">
+                        take a screenshot, paste and done
+                    </span>
+                </div>
+            </div>
+        </td>
+    <td width=20%></td>
+    </tr>
+        <tr>
+            <td width=30%>
+              <button *ngIf="appMode==='button'" class="btn btn-primary banner" id="pasteButton" style="background-color:#306998; font-size: 24pt;filter: drop-shadow(2px 0px 3px #FFF);">pymage-to-text</button>
+              <span *ngIf="appMode==='paste'" id="spanPaste" class="paste">paste image below</span>
+            </td>
+            <td style="vertical-align:middle;text-align:left" align=left colspan="1">
+              <table>
+                <tr>
+                  <td>
+                    <div class="lds-roller" id="divPleaseWait" style="visibility:hidden">
+                      <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div>
+                    </div>
+                  </div>
+                  </td>
+                  <td>
+                    <p id="pMsg" style="font-weight:bold; font-size:14pt; padding-bottom:6px"></p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td style="align-text:right" align=right colspan="2">
+              <div id="completedDiv" style="filter: drop-shadow(0 0 2 #FFF); visibility:hidden;">
+              <table>
+                <tr>
+                  <td>
+                    <a (click)="copyText(ocrmodified.value)"><img src="./assets/copy.png" width="80px" /></a>
+                  </td>
+                  <td>
+                   <a (click)="copyText(ocrmodified.value)"><button style="font-size:16px; font-weight:bold">Copy Text</button></a>
+                  </td>
+                </tr>
+              </table>
+
+              </div>
+            </td>
+        </tr>
+        <tr>
+          <td colspan="4">
+            <div class="form">
+              <textarea id="ocrtext" class="demo demo-textarea pastable form-control" #ocrmodified rows="20" 
+               placeholder="CTRL-V to paste" style="color:#646464; font-family: DejaVu Sans Mono; background-color:#FAF9F6" autofocus>{{ extracted_text_formatted }}</textarea>
+            </div>
+          </td>
+        </tr>
+    </table>
+</div>
+
+
+

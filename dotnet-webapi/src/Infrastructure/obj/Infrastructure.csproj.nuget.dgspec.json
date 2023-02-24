@@ -1,0 +1,270 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/kp/workspaces/dotnet7/dotnet-webapi3/ocr-api/src/Infrastructure/Infrastructure.csproj": {}
+  },
+  "projects": {
+    "/home/kp/workspaces/dotnet7/dotnet-webapi3/ocr-api/src/Application/Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/kp/workspaces/dotnet7/dotnet-webapi3/ocr-api/src/Application/Application.csproj",
+        "projectName": "Application",
+        "projectPath": "/home/kp/workspaces/dotnet7/dotnet-webapi3/ocr-api/src/Application/Application.csproj",
+        "packagesPath": "/home/kp/.nuget/packages/",
+        "outputPath": "/home/kp/workspaces/dotnet7/dotnet-webapi3/ocr-api/src/Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/kp/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/home/kp/workspaces/dotnet7/dotnet-webapi3/ocr-api/src/Domain/Domain.csproj": {
+                "projectPath": "/home/kp/workspaces/dotnet7/dotnet-webapi3/ocr-api/src/Domain/Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "OneOf": {
+              "target": "Package",
+              "version": "[3.0.223, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.25.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.2, 7.0.2]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.102/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/kp/workspaces/dotnet7/dotnet-webapi3/ocr-api/src/Domain/Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/kp/workspaces/dotnet7/dotnet-webapi3/ocr-api/src/Domain/Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "/home/kp/workspaces/dotnet7/dotnet-webapi3/ocr-api/src/Domain/Domain.csproj",
+        "packagesPath": "/home/kp/.nuget/packages/",
+        "outputPath": "/home/kp/workspaces/dotnet7/dotnet-webapi3/ocr-api/src/Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/kp/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "MassTransit": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "StronglyTypedId": {
+              "target": "Package",
+              "version": "[1.0.0-beta06, )"
+            },
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.2, 7.0.2]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.102/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/kp/workspaces/dotnet7/dotnet-webapi3/ocr-api/src/Infrastructure/Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/kp/workspaces/dotnet7/dotnet-webapi3/ocr-api/src/Infrastructure/Infrastructure.csproj",
+        "projectName": "Infrastructure",
+        "projectPath": "/home/kp/workspaces/dotnet7/dotnet-webapi3/ocr-api/src/Infrastructure/Infrastructure.csproj",
+        "packagesPath": "/home/kp/.nuget/packages/",
+        "outputPath": "/home/kp/workspaces/dotnet7/dotnet-webapi3/ocr-api/src/Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/kp/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/home/kp/workspaces/dotnet7/dotnet-webapi3/ocr-api/src/Application/Application.csproj": {
+                "projectPath": "/home/kp/workspaces/dotnet7/dotnet-webapi3/ocr-api/src/Application/Application.csproj"
+              },
+              "/home/kp/workspaces/dotnet7/dotnet-webapi3/ocr-api/src/Domain/Domain.csproj": {
+                "projectPath": "/home/kp/workspaces/dotnet7/dotnet-webapi3/ocr-api/src/Domain/Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
+            "EntityFrameworkCore.Exceptions.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.3.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.2, 7.0.2]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.102/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

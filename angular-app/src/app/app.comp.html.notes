@@ -1,0 +1,452 @@
+<header>
+  <style>
+  html {
+    overflow-y: hidden;
+  }
+
+  td, table{
+      border: solid black 1px;"
+  }
+
+  #header h1{
+      margin:0px;
+  }
+
+  .center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+    
+
+  header{
+    position: relative;
+    margin: 0 auto 0;
+    padding-top: Opx;
+  }
+  body{
+    position: relative;
+    margin: 0 auto 0;
+    padding-top: Opx;
+  }
+
+  hr { margin: 0.1em auto; }
+
+  table {
+      border-spacing: 0px;
+      border-collapse: separate;
+  }
+
+  img
+  {
+    border-radius: 10px;
+  }
+  
+  .front
+  { 
+      font-family:Flux Regular;Iwona-Regular;Liberty Sans Regular;Ubuntu;Times New Roman;
+      background: rgb(255,255,255);
+      background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,232,115,1) 55%, rgba(255,212,59,1) 100%);
+      width: 205px;
+      height: 140px;
+      backface-visibility: hidden; 
+      transition: transform .5s linear 0s;
+      vertical-align:middle;
+      color:#306998;
+  }
+  .front h2
+  {
+      vertical-align:middle;
+      font-family:Montserrat,Helvetica Neue,Arial,sans-serif;
+      font-size:18pt;
+      color:#306998;
+      font-weight:Normal;
+  }
+  .front p
+  {
+    color:#306998
+  }
+
+  .back
+  {
+      transform: perspective(400px) rotateY(180deg);
+      background: #262626;
+      color: #fff;
+      width: 205px;
+      height: 140px;
+      border-radius: 10px;
+      backface-visibility: hidden; 
+      transition: transform .5s linear 0s;
+      text-align:center;
+      transform: perspective(400px) rotateY(0deg);
+  }
+  .back h2
+  {
+    
+      vertical-align:middle;
+  }
+  .back p
+  {
+
+      top: 20px;
+      font-size: 14px;
+      vertical-align:middle;
+  }
+
+  .maincontainer:hover > .front
+  {
+      transform: perspective(400px) rotateY(-180deg);
+  }
+
+  .maincontainer:hover > .back
+  {
+      transform: perspective(400px) rotateY(0deg);
+  }
+
+  a, a:visited, a:hover, a:active {
+  color: inherit;
+  text-decoration: none;
+  }
+
+  .maincontainer
+  {
+    width: 205px;
+    height: 140px;
+    margin: 15px;
+    float: left; 
+    text-align: center;
+    padding-left: 35px; 
+    font-family:Montserrat,Helvetica Neue,Arial,sans-serif;
+    vertical-align:middle;
+  }
+
+  </style>
+</header> 
+<body>
+    <table width="100%; height:100%">
+        <tr>
+            <td
+                style="background-color:#4b8bbe;font-family:Montserrat,Helvetica Neue,Arial,sans-serif; color:white; vertical-align:top; 
+        -webkit-font-smoothing: antialiased; filter: drop-shadow(6px 4px 28px #000); z-index=10; padding-right: 15px;padding-top: 10px;
+        height: 100%; position: fixed; top: 0;
+        left: 0; overflow-x: hidden; overflow-y:hidden
+        overflow-anchor: none;  font-size:16pt"
+                width="20%"
+            >
+                <div style="filter: drop-shadow(0 0 0.75rem yellow); text-align: center;">
+                    <a href="/index.html">
+                        <img src="./assets/pymagelogo.png" width="60px" />
+                        &nbsp;&nbsp;&nbsp;
+                        <a style="font-size: 16pt;"> PYMAGE-TO-TEXT </a>
+                    </a>
+                </div>
+                <div style="text-align: center;">
+                    <hr width="90%" />
+                </div>
+                <div style="padding-top: 5px; padding-right: 21px; text-align: right; font-size: 12pt;">
+                    <table width="60%" align="right" style="text-align: right;">
+                        <tr>
+                            <td align="right" style="text-align: right;">
+                                <a>
+                                    ANGULAR <br />
+                                    + AWS <br />
+                                    + PYTHON
+                                </a>
+                                <br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right" style="text-align: right;">
+                                <hr width="100%" align="right" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right" style="padding-top: 0px;">
+                                <a style="color: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 232, 115, 1) 50%, rgba(255, 212, 59, 1) 100%);"> = OCR as easy as py </a>
+                                <br><br>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <table class="center">
+                <tr height="33%">
+                  <td>
+                    <div class="maincontainer">
+                        <div class="front" style="border: solid black 0px; border-radius: 10px; background-color: white;">
+                        <br>
+                            <h2 >Screenshot an image with text</h2>
+                        </div>
+                        <div class="back" style="font-size: 12pt; background-color: #646464; font-weight: bold;">
+                            <p>
+                                Capture a screenshot with text from an image or video with text you want copied to your clipboard. <br />
+                            </p>
+                        </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr height="33%">
+                  <td>
+                    <div class="maincontainer">
+                        <div class="front" style="border: solid black 0px; border-radius: 10px; background-color: white;">
+                            <h2 >Click the <strong>pymage-to-text</strong> button</h2>
+                        </div>
+                        <div class="back" style="font-size: 12pt; background-color: #646464;">
+                            <p>
+                                Click the <b>pymage-to-text</b> button.<br />
+                                <br />
+                                Pymage will process the image into editable text. 
+                            </p>
+                        </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr height="33%">
+                  <td>
+                    <div class="maincontainer">
+                        <div class="front" style="border: solid black 0px; border-radius: 10px; background-color: white;">
+                            <h2 >View your editable text results</h2>
+                        </div>
+                        <div class="back" style="font-size: 12pt; background-color: #646464; font-weight: bold;">
+                            <p>
+                                Copy your text and move on with your day!
+                            </p>
+                            <br />
+                        </div>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td width="80%" height="100%" style="vertical-align:top; margin-top:0px; padding-top:0; top:0px;" align="left" >
+                <app-nav-menu></app-nav-menu>
+                <main class="container">
+                    <router-outlet></router-outlet>
+                </main>
+            </td>
+        </tr>
+    </table>
+</body>
+
+
+
+original
+----------------------------------------
+
+<style>
+
+
+#header h1{
+    margin:0px;
+}
+  
+
+header{
+  position: relative;
+  margin: 0 auto 0;
+  padding-top: Opx;
+}
+body{
+  position: relative;
+  margin: 0 auto 0;
+  padding-top: Opx;
+}
+          html {
+            overflow-y: hidden;
+          }
+
+          hr { margin: 0.1em auto; }
+          
+          table {
+              border-spacing: 0px;
+              border-collapse: separate;
+          }
+          .maincontainer
+          {
+              width: 205px;
+              height: 140px;
+              margin: 15px;
+              float: left; 
+              text-align: center;
+              padding-left: 35px; 
+              font-family:Montserrat,Helvetica Neue,Arial,sans-serif;
+              vertical-align:middle;
+          }
+
+          img
+          {
+            border-radius: 10px;
+          }
+
+          .back h2
+          {
+              position: absolute;
+              vertical-align:middle;
+          }
+
+          .back p
+          {
+              position: absolute;
+              top: 20px;
+              font-size: 14px;
+              vertical-align:middle;
+          }
+
+          .front h2
+          {
+              position: absolute;
+              top: 50px;
+              vertical-align:middle;
+              font-family:Montserrat,Helvetica Neue,Arial,sans-serif;
+              font-size:18pt;
+              color:#306998;
+              font-weight:Normal;
+              padding:1px;
+          }
+
+          .front p
+          {
+            color:#306998
+          }
+
+          .maincontainer > .front
+          {
+              position: absolute;
+              transform: perspective(400px) rotateY(0deg);
+              font-family:Flux Regular;Iwona-Regular;Liberty Sans Regular;Ubuntu;Times New Roman;
+              background: rgb(255,255,255);
+              background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,232,115,1) 55%, rgba(255,212,59,1) 100%);
+              width: 205px;
+              height: 140px;
+              padding: 10px;
+              backface-visibility: hidden; 
+              transition: transform .5s linear 0s;
+              vertical-align:middle;
+              color:#306998
+          }
+
+          .maincontainer > .back
+          {
+              position: absolute;
+              transform: perspective(400px) rotateY(180deg);
+              background: #262626;
+              color: #fff;
+              width: 205px;
+              height: 140px;
+              border-radius: 10px;
+              backface-visibility: hidden; 
+              transition: transform .5s linear 0s;
+              padding: 10px;
+              text-align:center;
+        
+          }
+
+          .maincontainer:hover > .front
+          {
+              transform: perspective(400px) rotateY(-180deg);
+          }
+
+          .maincontainer:hover > .back
+          {
+              transform: perspective(400px) rotateY(0deg);
+          }
+
+          a, a:visited, a:hover, a:active {
+          color: inherit;
+          text-decoration: none;
+        }
+    </style>
+   
+<body>
+    <table width="100%; height:100%">
+        <tr>
+            <td
+                style="background-color:#4b8bbe;font-family:Montserrat,Helvetica Neue,Arial,sans-serif; color:white; vertical-align:top; 
+        -webkit-font-smoothing: antialiased; filter: drop-shadow(6px 4px 28px #000); z-index=10; padding-right: 15px;padding-top: 10px;
+        height: 100%; position: fixed; top: 0;
+        left: 0; overflow-x: hidden; overflow-y:hidden
+        overflow-anchor: none;  font-size:16pt"
+                width="20%"
+            >
+                <div style="filter: drop-shadow(0 0 0.75rem yellow); text-align: center;">
+                    <a href="/index.html">
+                        <img src="./assets/pymagelogo.png" width="60px" />
+                        &nbsp;&nbsp;&nbsp;
+                        <a style="font-size: 16pt;"> PYMAGE-TO-TEXT </a>
+                    </a>
+                </div>
+                <div style="text-align: center;">
+                    <hr width="90%" />
+                </div>
+                <div style="padding-top: 5px; padding-right: 21px; text-align: right; font-size: 12pt;">
+                    <table width="60%" align="right" style="text-align: right;">
+                        <tr>
+                            <td align="right" style="text-align: right;">
+                                <a>
+                                    ANGULAR <br />
+                                    + AWS <br />
+                                    + PYTHON
+                                </a>
+                                <br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right" style="text-align: right;">
+                                <hr width="100%" align="right" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right" style="padding-top: 0px;">
+                                <a style="color: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 232, 115, 1) 50%, rgba(255, 212, 59, 1) 100%);"> = OCR as easy as py </a>
+                                <br><br>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div style="text-align:center; vertical-align:middle;">
+                    <div class="maincontainer" style="vertical-align:middle">
+                        <div class="front" style="border: solid black 0px; border-radius: 10px; background-color: white;">
+                        <br>
+                            <h2 style="padding-top:20px">Screenshot an image with text</h2>
+                        </div>
+                        <div class="back" style="font-size: 12pt; background-color: #646464; font-weight: bold;">
+                            <p>
+                                Capture a screenshot with text from an image or video with text you want copied to your clipboard. <br />
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="maincontainer" style="padding-top:15px">
+                        <div class="front" style="border: solid black 0px; border-radius: 10px; background-color: white;">
+                            <h2 style="padding-top:20px">Click the <strong>pymage-to-text</strong> button</h2>
+                        </div>
+                        <div class="back" style="font-size: 12pt; background-color: #646464;">
+                            <p>
+                                Click the <b>pymage-to-text</b> button.<br />
+                                <br />
+                                Pymage will process the image into editable text. 
+                            </p>
+                        </div>
+                    </div>
+   
+                    <div class="maincontainer" style="padding-top:15px">
+                        <div class="front" style="border: solid black 0px; border-radius: 10px; background-color: white;">
+                            <h2 style="padding-top:20px">View your editable text results</h2>
+                        </div>
+                        <div class="back" style="font-size: 12pt; background-color: #646464; font-weight: bold;">
+                            <p>
+                                Copy your text and move on with your day!
+                            </p>
+                            <br />
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td width="80%" height="100%" style="vertical-align:top; margin-top:0px; padding-top:0; top:0px; position: relative; " >
+                <app-nav-menu></app-nav-menu>
+                <main class="container">
+                    <router-outlet></router-outlet>
+                </main>
+            </td>
+        </tr>
+    </table>
+</body>

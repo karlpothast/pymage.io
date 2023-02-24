@@ -1,0 +1,12 @@
+/home/kp/workspaces/dotnet7/dotnet-webapi/counties-api/src/Domain/bin/Release/net7.0/Domain.deps.json
+/home/kp/workspaces/dotnet7/dotnet-webapi/counties-api/src/Domain/bin/Release/net7.0/Domain.dll
+/home/kp/workspaces/dotnet7/dotnet-webapi/counties-api/src/Domain/bin/Release/net7.0/Domain.pdb
+/home/kp/workspaces/dotnet7/dotnet-webapi/counties-api/src/Domain/obj/Release/net7.0/Domain.csproj.AssemblyReference.cache
+/home/kp/workspaces/dotnet7/dotnet-webapi/counties-api/src/Domain/obj/Release/net7.0/Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/kp/workspaces/dotnet7/dotnet-webapi/counties-api/src/Domain/obj/Release/net7.0/Domain.AssemblyInfoInputs.cache
+/home/kp/workspaces/dotnet7/dotnet-webapi/counties-api/src/Domain/obj/Release/net7.0/Domain.AssemblyInfo.cs
+/home/kp/workspaces/dotnet7/dotnet-webapi/counties-api/src/Domain/obj/Release/net7.0/Domain.csproj.CoreCompileInputs.cache
+/home/kp/workspaces/dotnet7/dotnet-webapi/counties-api/src/Domain/obj/Release/net7.0/Domain.dll
+/home/kp/workspaces/dotnet7/dotnet-webapi/counties-api/src/Domain/obj/Release/net7.0/refint/Domain.dll
+/home/kp/workspaces/dotnet7/dotnet-webapi/counties-api/src/Domain/obj/Release/net7.0/Domain.pdb
+/home/kp/workspaces/dotnet7/dotnet-webapi/counties-api/src/Domain/obj/Release/net7.0/ref/Domain.dll
