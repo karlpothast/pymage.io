@@ -104,18 +104,18 @@ import json
 def process_text_analysis():
     try:
       start_time = None
-      start_time = time.perf_counter() 
+      start_time = time.perf_counter()
       png_file_path = os.environ["pymage_file_path"]
       png_file = open(png_file_path, 'rb')
       img_byte_arr = bytearray(png_file.read())
-      
+
       client = boto3.client(
           get_config_value('aws_config','aws_service_name'),
           region_name=get_config_value('aws_config','aws_region_name'),
           aws_access_key_id=get_config_value('aws_config','aws_access_key_id'),
           aws_secret_access_key=get_config_value('aws_config','aws_secret_access_key')
       )
-    
+
       response = client.detect_document_text(
           Document={'Bytes': img_byte_arr}
       )
@@ -126,18 +126,18 @@ def process_text_analysis():
               extracted_text += item["Text"] + "\n"
 
       extracted_text = extracted_text.strip()
-      extracted_text = extracted_text.replace('"', '')
-      extracted_text = '\"' + extracted_text + '\"'
+      #extracted_text = extracted_text.replace('"', '\\"')
+      #extracted_text = '\"' + extracted_text + '\"'
+      extracted_text = json.dumps(extracted_text)
 
       elapsed_time = time.perf_counter() - start_time
 
-      json_success_msg= {
-              "message": "success",
-              "extracted_text": extracted_text
-              }
-
+      print ('extracted text value : ' + extracted_text)
+      print('before json data var')
       json_data = '{"message": "success", ' \
           '"extracted_text": ' + extracted_text + '}'
+      print('after json data var')
+
 
       json_object = json.loads(json_data,strict=False)
       json_formatted_str = json.dumps(json_object, indent=2)
